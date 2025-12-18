@@ -4,7 +4,7 @@
 
 | Project | Description | Keywords |
 | :--- | :--- | :--- |
-| [**Tokyo Sticker DB**](https://eldoprano.github.io/tokyo-sticker-db/) | **Segmentation**, **grouping** and **visualization** of Tokyo stickers. | Vision, React, DINOv3 |
+| [**Tokyo Sticker DB**](https://eldoprano.github.io/tokyo-sticker-db/) | **Segmentation**, **grouping** and **visualization** of Tokyo stickers. | SAM3, DINOv3, Stickers |
 | [**Learn Kana**](https://eldoprano.github.io/learn-kana/) | For practicing Japanese **hiragana** and **katakana** characters. | UX/UI, Education, JS |
 | [**Lenticular Generator**](https://eldoprano.github.io/Lenticular-Postcard-Generator/) | **Creator** and **visualization** for lenticular postcards. | Interactive, Lenticular |
 | [**Peru Driving Test**](https://eldoprano.github.io/test-drive-peru-A1/) | Page to **practice** the questions to get a Peruvian **drivers licence**. | Web, React, Education |
