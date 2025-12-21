@@ -2,14 +2,92 @@
 
 ### Project Portfolio
 
-| Project | Description | Keywords |
-| :--- | :--- | :--- |
-| [**Photo Splat Gallery**](https://eldoprano.github.io/photo-splat-gallery/) | **3D Gaussian Splat** gallery with **AR** and **tilt** interaction. | 3D, WebXR, Splats |
-| [**Tokyo Sticker DB**](https://eldoprano.github.io/tokyo-sticker-db/) | **Segmentation**, **grouping** and **visualization** of Tokyo stickers. | SAM3, DINOv3, Stickers |
-| [**Learn Kana**](https://eldoprano.github.io/learn-kana/) | For practicing Japanese **hiragana** and **katakana** characters. | UX/UI, Education, JS |
-| [**Lenticular Generator**](https://eldoprano.github.io/Lenticular-Postcard-Generator/) | **Creator** and **visualization** for lenticular postcards. | Interactive, Lenticular |
-| [**Peru Driving Test**](https://eldoprano.github.io/test-drive-peru-A1/) | Page to **practice** the questions to get a Peruvian **drivers licence**. | Web, React, Education |
-| [**3D Texture Compressor**](https://eldoprano.github.io/3d-texture-compressor/) | **Online tool** to **compress** and **preview** GLB textures for **3D objects**. | Graphics, Tool, WebGL |
-| [**3D Gen for Print**](https://github.com/Eldoprano/Project-3D-Gen-4-Print/) | Generative **printable 3D objects** based on **multimodal input**. | Gen AI, 3D, 3D printing |
-| [**WiFi Fingerprinting**](https://github.com/Eldoprano/probe_request_fingerprinting) | **PCAP-based identification** of mobile devices via **probe requests**. | Forensics, Python, WiFi |
-| [**Data Structures Gist**](https://gist.github.com/Eldoprano/0c09fd33b9dfd3e6b8d396159b4a9bfd) | Comparison of **probabilistic data structures** for LoRaWAN. | Analysis, Gist, LoRaWAN |
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://eldoprano.github.io/photo-splat-gallery/">
+        <img src="assets/screenshots/photo-splat.png" alt="Photo Splat Gallery" width="100%" />
+      </a>
+      <br />
+      <a href="https://eldoprano.github.io/photo-splat-gallery/"><b>Photo Splat Gallery</b></a>
+      <br />
+      3D Gaussian Splat gallery with AR and tilt interaction.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://eldoprano.github.io/tokyo-sticker-db/">
+        <img src="assets/screenshots/tokyo-stickers.png" alt="Tokyo Sticker DB" width="100%" />
+      </a>
+      <br />
+      <a href="https://eldoprano.github.io/tokyo-sticker-db/"><b>Tokyo Sticker DB</b></a>
+      <br />
+      Segmentation, grouping and visualization of Tokyo stickers.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://eldoprano.github.io/learn-kana/">
+        <img src="assets/screenshots/learn-kana.png" alt="Learn Kana" width="100%" />
+      </a>
+      <br />
+      <a href="https://eldoprano.github.io/learn-kana/"><b>Learn Kana</b></a>
+      <br />
+      For practicing Japanese hiragana and katakana characters.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://eldoprano.github.io/Lenticular-Postcard-Generator/">
+        <img src="assets/screenshots/lenticular.png" alt="Lenticular Generator" width="100%" />
+      </a>
+      <br />
+      <a href="https://eldoprano.github.io/Lenticular-Postcard-Generator/"><b>Lenticular Generator</b></a>
+      <br />
+      Creator and visualization for lenticular postcards.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://eldoprano.github.io/test-drive-peru-A1/">
+        <img src="assets/screenshots/peru-driving.png" alt="Peru Driving Test" width="100%" />
+      </a>
+      <br />
+      <a href="https://eldoprano.github.io/test-drive-peru-A1/"><b>Peru Driving Test</b></a>
+      <br />
+      Page to practice the questions to get a Peruvian drivers licence.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://eldoprano.github.io/3d-texture-compressor/">
+        <img src="assets/screenshots/texture-compressor.png" alt="3D Texture Compressor" width="100%" />
+      </a>
+      <br />
+      <a href="https://eldoprano.github.io/3d-texture-compressor/"><b>3D Texture Compressor</b></a>
+      <br />
+      Online tool to compress and preview GLB textures for 3D objects.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://github.com/Eldoprano/Project-3D-Gen-4-Print/">
+        <img src="assets/screenshots/3d-gen-print.png" alt="3D Gen for Print" width="100%" />
+      </a>
+      <br />
+      <a href="https://github.com/Eldoprano/Project-3D-Gen-4-Print/"><b>3D Gen for Print</b></a>
+      <br />
+      Generative printable 3D objects based on multimodal input.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/Eldoprano/probe_request_fingerprinting">
+        <img src="assets/screenshots/wifi-fingerprint.png" alt="WiFi Fingerprinting" width="100%" />
+      </a>
+      <br />
+      <a href="https://github.com/Eldoprano/probe_request_fingerprinting"><b>WiFi Fingerprinting</b></a>
+      <br />
+      PCAP-based identification of mobile devices via probe requests.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://gist.github.com/Eldoprano/0c09fd33b9dfd3e6b8d396159b4a9bfd">
+        <img src="assets/screenshots/ds-gist.png" alt="Data Structures Gist" width="100%" />
+      </a>
+      <br />
+      <a href="https://gist.github.com/Eldoprano/0c09fd33b9dfd3e6b8d396159b4a9bfd"><b>Data Structures Gist</b></a>
+      <br />
+      Comparison of probabilistic data structures for LoRaWAN.
+    </td>
+  </tr>
+</table>
