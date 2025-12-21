@@ -4,6 +4,7 @@
 
 | Project | Description | Keywords |
 | :--- | :--- | :--- |
+| [**Photo Splat Gallery**](https://eldoprano.github.io/photo-splat-gallery/) | **3D Gaussian Splat** gallery with **AR** and **tilt** interaction. | 3D, WebXR, Splats |
 | [**Tokyo Sticker DB**](https://eldoprano.github.io/tokyo-sticker-db/) | **Segmentation**, **grouping** and **visualization** of Tokyo stickers. | SAM3, DINOv3, Stickers |
 | [**Learn Kana**](https://eldoprano.github.io/learn-kana/) | For practicing Japanese **hiragana** and **katakana** characters. | UX/UI, Education, JS |
 | [**Lenticular Generator**](https://eldoprano.github.io/Lenticular-Postcard-Generator/) | **Creator** and **visualization** for lenticular postcards. | Interactive, Lenticular |
