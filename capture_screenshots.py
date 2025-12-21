@@ -18,34 +18,38 @@ projects = [
 OUTPUT_DIR = "assets/screenshots"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def apply_border(image_path, corner_radius=20, border_width=2, border_color=(255, 255, 255, 60)):
-    """Applies rounded corners and a subtle border stroke to an image."""
+def apply_border(image_path, corner_radius=24, target_width=800):
+    """Resizes image to target_width and applies anti-aliased rounded corners."""
     try:
         img = Image.open(image_path).convert("RGBA")
         
-        # Create mask for rounded corners
-        mask = Image.new('L', img.size, 0)
+        # Calculate new size while maintaining aspect ratio
+        if img.width > target_width:
+            aspect_ratio = img.height / img.width
+            new_size = (target_width, int(target_width * aspect_ratio))
+            # Use high-quality LANCZOS for resizing
+            img = img.resize(new_size, Image.Resampling.LANCZOS)
+        else:
+            new_size = img.size
+            
+        # Create a high-res mask for anti-aliasing (4x scale)
+        scale = 4
+        mask_size = (new_size[0] * scale, new_size[1] * scale)
+        mask = Image.new('L', mask_size, 0)
         draw = ImageDraw.Draw(mask)
-        draw.rounded_rectangle([(0, 0), img.size], corner_radius, fill=255)
+        draw.rounded_rectangle([(0, 0), mask_size], corner_radius * scale, fill=255)
+        
+        # Downsample mask back to original size for smooth edges
+        mask = mask.resize(new_size, Image.Resampling.LANCZOS)
         
         # Apply mask
-        output = ImageOps.fit(img, img.size, centering=(0.5, 0.5))
+        output = Image.new("RGBA", new_size, (0, 0, 0, 0))
+        output.paste(img, (0, 0))
         output.putalpha(mask)
         
-        # Add a subtle border stroke
-        if border_width > 0:
-            stroke_img = Image.new("RGBA", img.size, (0, 0, 0, 0))
-            stroke_draw = ImageDraw.Draw(stroke_img)
-            stroke_draw.rounded_rectangle(
-                [(0, 0), (img.size[0]-1, img.size[1]-1)], 
-                corner_radius, 
-                outline=border_color, 
-                width=border_width
-            )
-            output = Image.alpha_composite(output, stroke_img)
-        
-        output.save(image_path, "PNG")
-        print(f"✅ Processed {os.path.basename(image_path)}")
+        # Save as PNG with optimization
+        output.save(image_path, "PNG", optimize=True)
+        print(f"✅ Optimized and smoothed {os.path.basename(image_path)} ({new_size[0]}x{new_size[1]})")
     except Exception as e:
         print(f"❌ Failed to process {image_path}: {e}")
 
