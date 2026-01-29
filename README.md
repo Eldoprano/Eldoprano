@@ -34,7 +34,7 @@
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/Eldoprano/offline-browser-translate">
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/local-llm-translator/">
         <img src="assets/screenshots/local-translator.png" alt="Local Translator" width="100%" />
       </a>
       <br />
